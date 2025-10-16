@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AI Writing Assistent",
+  "version": "1.0",
+  "description": "An AI-powered writing assistant for Gmail, Twitter, and LinkedIn using the Gemini API.",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage", "scripting"],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*",
+        "https://twitter.com/*",
+        "https://www.linkedin.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
