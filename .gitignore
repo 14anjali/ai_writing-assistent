@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+backend/.env
+
+# Build and packaging files
+dist/
+build/
+
+# Chrome extension package files
+*.zip
+*.crx
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
